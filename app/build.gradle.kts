@@ -34,10 +34,19 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
-dependencies {
 
+dependencies {
+    //camaraX
+    implementation("androidx.camera:camera-camera2:1.2.2")
+    implementation("androidx.camera:camera-lifecycle:1.2.2")
+    implementation("androidx.camera:camera-view:1.2.2")
+
+    
     val navVersion="2.7.0"
     //NavComponent
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
